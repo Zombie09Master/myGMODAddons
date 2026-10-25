@@ -1,0 +1,8 @@
+"VertexLitGeneric"
+{
+	// Original shader: VertexLitTexture
+	"$basetexture" "models/cs_enemy/face/barney/barneyface"
+	"$bumpmap" "models/cs_enemy/face/barney/barney_head_normal"
+	"$halflambert" 1
+	"$nodecal" "1"
+}

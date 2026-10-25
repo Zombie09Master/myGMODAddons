@@ -1,0 +1,11 @@
+"VertexLitGeneric"
+{
+	"$baseTexture" "models/player/PMC_D/IRIS_Identity_mark"
+	"$model" 1
+	"$surfaceprop" "flesh"
+	"$selfillum" 1
+	
+	
+	
+	
+}

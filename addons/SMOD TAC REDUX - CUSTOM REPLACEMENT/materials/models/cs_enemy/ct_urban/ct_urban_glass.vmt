@@ -1,0 +1,14 @@
+"vertexlitgeneric"
+{
+	"$baseTexture" "models/cs_enemy/ct_urban/ct_urban_glass"
+	
+
+// Specularity
+	"$envmapmask" "models/cs_enemy/ct_urban/ct_urban_glass_spec"
+
+
+// Transparency
+	"$translucent" 1
+	
+	
+}

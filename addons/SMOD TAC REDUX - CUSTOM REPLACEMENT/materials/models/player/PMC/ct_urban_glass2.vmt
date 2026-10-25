@@ -1,0 +1,15 @@
+"vertexlitgeneric"
+{
+	"$baseTexture" "models/player/PMC/ct_urban_glass2"
+	
+
+// Specularity
+	"$envmap" 			"env_cubemap"
+	"$envmapmask" "models/player/PMC/ct_urban_glass_spec2"
+
+
+// Transparency
+	"$translucent" 1
+	
+	
+}

@@ -1,0 +1,11 @@
+"LightmappedGeneric"
+{
+	"$basetexture" "decals/tile/shot6"
+	"$decalscale" 0.15
+	"$decal" 1
+	"$translucent" 1
+	"$nocull" 1
+	"$modelmaterial" "decals/tile/shot6"
+}
+
+

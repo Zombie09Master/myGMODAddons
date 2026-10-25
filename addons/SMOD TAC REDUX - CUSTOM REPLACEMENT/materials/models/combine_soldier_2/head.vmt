@@ -1,0 +1,9 @@
+"VertexLitGeneric"
+{
+	"$baseTexture"	"models/combine_soldier_2/head"
+	"$bumpmap"	"models/combine_soldier_2/head_n"
+
+	"$surfaceprop"	"flesh"
+	"$model"		1
+	"$halflambert"	"1"
+}

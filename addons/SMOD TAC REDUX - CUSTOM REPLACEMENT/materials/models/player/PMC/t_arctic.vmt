@@ -1,0 +1,6 @@
+VertexLitGeneric
+{
+	"$basetexture" "models\player\PMC\t_arctic"
+	"$bumpmap" "models\player\PMC\t_arctic_normal"
+	"$normalmapalphaenvmapmask" "0"
+}

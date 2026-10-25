@@ -1,0 +1,6 @@
+"DecalModulate"
+{
+	"$basetexture" "decals/concrete/shot5"
+	"$decalscale" 0.05
+	"$decal" 1
+}

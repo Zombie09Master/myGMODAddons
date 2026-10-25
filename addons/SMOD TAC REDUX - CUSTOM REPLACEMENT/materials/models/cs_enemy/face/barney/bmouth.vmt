@@ -1,0 +1,7 @@
+"Teeth"
+{
+	"$basetexture" "models/cs_enemy/face/barney/bmouth"
+	"$model" 1
+	"$clientshader" "MouthShader"
+	"$halflambert" 1
+}

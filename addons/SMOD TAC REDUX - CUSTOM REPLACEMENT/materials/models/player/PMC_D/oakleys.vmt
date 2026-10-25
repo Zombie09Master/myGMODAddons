@@ -1,0 +1,7 @@
+"VertexLitGeneric"
+{
+	"$basetexture"	"models\player\PMC_D\lenses"
+	"$envmap" "env_cubemap"
+	"$envmapmask" "models\player\PMC_D\oakleys_ref"
+	"$translucent" "1"
+}
