@@ -1,0 +1,14 @@
+
+vertexlitgeneric
+{
+
+	$basetexture models/props_crates/misc_crates
+
+	$halflambert 1
+
+	$detail detail/wood_detail_01
+	$detailscale 4
+	$detailblendfactor 0.9
+	$detailblendmode 0
+
+}

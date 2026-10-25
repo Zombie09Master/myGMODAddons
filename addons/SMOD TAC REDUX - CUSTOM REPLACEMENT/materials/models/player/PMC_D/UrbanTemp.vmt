@@ -1,0 +1,6 @@
+"vertexlitgeneric"
+{
+   "$baseTexture" "models/player/PMC_D/urbantemp"
+   "$bumpmap" "models/player/PMC_D/urbantemp_normal"
+   "$nodecal" 0
+} 
