@@ -1,0 +1,931 @@
+--[[NPC SPECIFIC SOUNDS]]
+if (SERVER) then
+	--METROCOP
+	sound.Add({
+		name = 			"NPC_MetroPolice.HitByVehicle",
+		channel =		CHAN_STATIC,
+		volume =		1,
+		pitch =			{95, 105},
+		level =			SNDLVL_90dB,
+		sound = {
+			"npc/metropolice/hit_by_vehicle1.wav",
+			"npc/metropolice/hit_by_vehicle2.wav",
+			"npc/metropolice/hit_by_vehicle3.wav"
+		}
+	})
+
+	sound.Add({
+		name = 			"NPC_MetroPolice.Shove",
+		channel =		CHAN_WEAPON,
+		volume =		1,
+		pitch =			PITCH_NORM,
+		level =			SNDLVL_NORM,
+		sound = {
+			"physics/flesh/flesh_impact_hard1.wav",
+			"physics/flesh/flesh_impact_hard2.wav",
+			"physics/flesh/flesh_impact_hard3.wav",
+			"physics/flesh/flesh_impact_hard4.wav",
+			"physics/flesh/flesh_impact_hard5.wav",
+			"physics/flesh/flesh_impact_hard6.wav",
+			"physics/flesh/flesh_impact_hard7.wav",
+			"physics/flesh/flesh_impact_hard8.wav",
+			"physics/flesh/flesh_impact_hard9.wav"
+		}
+	})
+
+	sound.Add({
+		name = 			"NPC_MetroPolice.FootstepLeft",
+		channel =		CHAN_BODY,
+		volume =		1.0,
+		pitch =			{95, 105},
+		level =			SNDLVL_NORM,
+		sound = {
+				"npc/footsteps/concrete1.wav",
+				"npc/footsteps/concrete3.wav",
+				"npc/footsteps/concrete5.wav",
+				"npc/footsteps/concrete7.wav",
+				"npc/footsteps/concrete9.wav",
+				"npc/footsteps/concrete11.wav",
+				"npc/footsteps/concrete13.wav",
+				"npc/footsteps/concrete15.wav",
+				"npc/footsteps/concrete17.wav",
+				"npc/footsteps/concrete19.wav",
+				"npc/footsteps/concrete21.wav",
+				"npc/footsteps/concrete23.wav",
+				"npc/footsteps/concrete25.wav",
+				"npc/footsteps/concrete27.wav",
+				"npc/footsteps/concrete29.wav"
+		}
+	})
+
+	sound.Add({
+		name = 			"NPC_MetroPolice.FootstepRight",
+		channel =		CHAN_BODY,
+		volume =		1.0,
+		pitch =			{95, 105},
+		level =			SNDLVL_NORM,
+		sound = {
+			"npc/footsteps/concrete2.wav",
+			"npc/footsteps/concrete4.wav",
+			"npc/footsteps/concrete6.wav",
+			"npc/footsteps/concrete8.wav",
+			"npc/footsteps/concrete10.wav",
+			"npc/footsteps/concrete12.wav",
+			"npc/footsteps/concrete14.wav",
+			"npc/footsteps/concrete16.wav",
+			"npc/footsteps/concrete18.wav",
+			"npc/footsteps/concrete20.wav",
+			"npc/footsteps/concrete22.wav",
+			"npc/footsteps/concrete24.wav",
+			"npc/footsteps/concrete26.wav",
+			"npc/footsteps/concrete28.wav"
+		}
+	})
+
+	sound.Add({
+		name = 			"NPC_MetroPolice.RunFootstepLeft",
+		channel =		CHAN_BODY,
+		volume =		0.55,
+		pitch =			{95, 105},
+		level =			SNDLVL_NORM,
+		sound = {
+			"npc/combine_soldier/gear1.wav",
+			"npc/combine_soldier/gear3.wav",
+			"npc/combine_soldier/gear7.wav",
+			"npc/combine_soldier/gear9.wav",
+			"npc/combine_soldier/gear11.wav",
+			"npc/combine_soldier/gear13.wav",
+			"npc/combine_soldier/gear15.wav",
+			"npc/combine_soldier/gear17.wav",
+			"npc/combine_soldier/gear19.wav",
+			"npc/combine_soldier/gear21.wav",
+			"npc/combine_soldier/gear23.wav",
+			"npc/combine_soldier/gear25.wav",
+			"npc/combine_soldier/gear27.wav",
+			"npc/combine_soldier/gear29.wav",
+			"npc/combine_soldier/gear31.wav",
+			"npc/combine_soldier/gear33.wav",
+			"npc/combine_soldier/gear35.wav",
+			"npc/combine_soldier/gear37.wav",
+			"npc/combine_soldier/gear39.wav",
+			"npc/combine_soldier/gear41.wav",
+			"npc/combine_soldier/gear43.wav",
+			"npc/combine_soldier/gear45.wav",
+			"npc/combine_soldier/gear47.wav"
+		}
+	})
+
+	sound.Add({
+		name = 			"NPC_MetroPolice.RunFootstepRight",
+		channel =		CHAN_BODY,
+		volume =		0.55,
+		pitch =			{95, 105},
+		level =			SNDLVL_NORM,
+		sound = {
+			"npc/combine_soldier/gear2.wav",
+			"npc/combine_soldier/gear4.wav",
+			"npc/combine_soldier/gear6.wav",
+			"npc/combine_soldier/gear8.wav",
+			"npc/combine_soldier/gear10.wav",
+			"npc/combine_soldier/gear12.wav",
+			"npc/combine_soldier/gear14.wav",
+			"npc/combine_soldier/gear16.wav",
+			"npc/combine_soldier/gear18.wav",
+			"npc/combine_soldier/gear20.wav",
+			"npc/combine_soldier/gear22.wav",
+			"npc/combine_soldier/gear24.wav",
+			"npc/combine_soldier/gear26.wav",
+			"npc/combine_soldier/gear28.wav",
+			"npc/combine_soldier/gear30.wav",
+			"npc/combine_soldier/gear32.wav",
+			"npc/combine_soldier/gear34.wav",
+			"npc/combine_soldier/gear36.wav",
+			"npc/combine_soldier/gear38.wav",
+			"npc/combine_soldier/gear40.wav",
+			"npc/combine_soldier/gear42.wav",
+			"npc/combine_soldier/gear44.wav",
+			"npc/combine_soldier/gear46.wav",
+			"npc/combine_soldier/gear48.wav"
+		}
+	})
+	
+	--SOLDIER
+	sound.Add({
+		name = 			"NPC_Combine.WeaponBash",
+		channel =		CHAN_WEAPON,
+		volume =		1,
+		pitch =			PITCH_NORM,
+		level =			SNDLVL_NORM,
+		sound = {
+			"physics/flesh/WeaponBash1.wav",
+			"physics/flesh/WeaponBash2.wav",
+			"physics/flesh/WeaponBash3.wav",
+			"physics/flesh/WeaponBash4.wav",
+			"physics/flesh/WeaponBash5.wav",
+			"physics/flesh/WeaponBash6.wav",
+			"physics/flesh/WeaponBash7.wav",
+			"physics/flesh/WeaponBash8.wav",
+			"physics/flesh/WeaponBash9.wav",
+			"physics/flesh/WeaponBash10.wav",
+			"physics/flesh/WeaponBash11.wav",
+			"physics/flesh/WeaponBash12.wav",
+			"physics/flesh/WeaponBash13.wav",
+			"physics/flesh/WeaponBash14.wav",
+			"physics/flesh/WeaponBash15.wav",
+			"physics/flesh/WeaponBash16.wav",
+			"physics/flesh/WeaponBash17.wav",
+			"physics/flesh/WeaponBash18.wav",
+			"physics/flesh/WeaponBash19.wav",
+			"physics/flesh/WeaponBash20.wav",
+			"physics/flesh/WeaponBash21.wav",
+			"physics/flesh/WeaponBash22.wav",
+			"physics/flesh/WeaponBash23.wav",
+			"physics/flesh/WeaponBash24.wav",
+			"physics/flesh/WeaponBash25.wav",
+			"physics/flesh/WeaponBash26.wav",
+			"physics/flesh/WeaponBash27.wav",
+			"physics/flesh/WeaponBash28.wav",
+			"physics/flesh/WeaponBash29.wav",
+			"physics/flesh/WeaponBash30.wav"
+		}
+	})
+
+	sound.Add({
+		name = 			"NPC_Combine.GrenadeLaunch",
+		channel =		CHAN_WEAPON,
+		volume =		1,
+		pitch =			PITCH_NORM,
+		level =			SNDLVL_NORM,
+		sound = 		"weapons/grenade_launcher1.wav"
+	})
+
+	sound.Add({
+		name = 			"NPC_CombineS.FootstepLeft",
+		channel =		CHAN_BODY,
+		volume =		1.0,
+		pitch =			{95, 105},
+		level =			SNDLVL_NORM,
+		sound = {
+			"npc/footsteps/concrete1.wav",
+			"npc/footsteps/concrete3.wav",
+			"npc/footsteps/concrete5.wav",
+			"npc/footsteps/concrete7.wav",
+			"npc/footsteps/concrete9.wav",
+			"npc/footsteps/concrete11.wav",
+			"npc/footsteps/concrete13.wav",
+			"npc/footsteps/concrete15.wav",
+			"npc/footsteps/concrete17.wav",
+			"npc/footsteps/concrete19.wav",
+			"npc/footsteps/concrete21.wav",
+			"npc/footsteps/concrete23.wav",
+			"npc/footsteps/concrete25.wav",
+			"npc/footsteps/concrete27.wav",
+			"npc/footsteps/concrete29.wav"
+		}
+	})
+
+	sound.Add({
+		name = 			"NPC_CombineS.FootstepRight",
+		channel =		CHAN_BODY,
+		volume =		1.0,
+		pitch =			{95, 105},
+		level =			SNDLVL_NORM,
+		sound = {
+			"npc/footsteps/concrete2.wav",
+			"npc/footsteps/concrete4.wav",
+			"npc/footsteps/concrete6.wav",
+			"npc/footsteps/concrete8.wav",
+			"npc/footsteps/concrete10.wav",
+			"npc/footsteps/concrete12.wav",
+			"npc/footsteps/concrete14.wav",
+			"npc/footsteps/concrete16.wav",
+			"npc/footsteps/concrete18.wav",
+			"npc/footsteps/concrete20.wav",
+			"npc/footsteps/concrete22.wav",
+			"npc/footsteps/concrete24.wav",
+			"npc/footsteps/concrete26.wav",
+			"npc/footsteps/concrete28.wav"
+		}
+	})
+
+	sound.Add({
+		name = 			"NPC_CombineS.RunFootstepLeft",
+		channel =		CHAN_BODY,
+		volume =		0.75,
+		pitch =			{95, 105},
+		level =			SNDLVL_NORM,
+		sound = {
+			"npc/combine_soldier/gear1.wav",
+			"npc/combine_soldier/gear3.wav",
+			"npc/combine_soldier/gear7.wav",
+			"npc/combine_soldier/gear9.wav",
+			"npc/combine_soldier/gear11.wav",
+			"npc/combine_soldier/gear13.wav",
+			"npc/combine_soldier/gear15.wav",
+			"npc/combine_soldier/gear17.wav",
+			"npc/combine_soldier/gear19.wav",
+			"npc/combine_soldier/gear21.wav",
+			"npc/combine_soldier/gear23.wav",
+			"npc/combine_soldier/gear25.wav",
+			"npc/combine_soldier/gear27.wav",
+			"npc/combine_soldier/gear29.wav",
+			"npc/combine_soldier/gear31.wav",
+			"npc/combine_soldier/gear33.wav",
+			"npc/combine_soldier/gear35.wav",
+			"npc/combine_soldier/gear37.wav",
+			"npc/combine_soldier/gear39.wav",
+			"npc/combine_soldier/gear41.wav",
+			"npc/combine_soldier/gear43.wav",
+			"npc/combine_soldier/gear45.wav",
+			"npc/combine_soldier/gear47.wav"
+		}
+	})
+
+	sound.Add({
+		name = 			"NPC_CombineS.RunFootstepRight",
+		channel =		CHAN_BODY,
+		volume =		0.75,
+		pitch =			{95, 105},
+		level =			SNDLVL_NORM,
+		sound = {
+			"npc/combine_soldier/gear2.wav",
+			"npc/combine_soldier/gear4.wav",
+			"npc/combine_soldier/gear6.wav",
+			"npc/combine_soldier/gear8.wav",
+			"npc/combine_soldier/gear10.wav",
+			"npc/combine_soldier/gear12.wav",
+			"npc/combine_soldier/gear14.wav",
+			"npc/combine_soldier/gear16.wav",
+			"npc/combine_soldier/gear18.wav",
+			"npc/combine_soldier/gear20.wav",
+			"npc/combine_soldier/gear22.wav",
+			"npc/combine_soldier/gear24.wav",
+			"npc/combine_soldier/gear26.wav",
+			"npc/combine_soldier/gear28.wav",
+			"npc/combine_soldier/gear30.wav",
+			"npc/combine_soldier/gear32.wav",
+			"npc/combine_soldier/gear34.wav",
+			"npc/combine_soldier/gear36.wav",
+			"npc/combine_soldier/gear38.wav",
+			"npc/combine_soldier/gear40.wav",
+			"npc/combine_soldier/gear42.wav",
+			"npc/combine_soldier/gear44.wav",
+			"npc/combine_soldier/gear46.wav",
+			"npc/combine_soldier/gear48.wav"
+		}
+	})
+
+	sound.Add({
+		name = 			"NPC_CombineS.ElectrocuteScream",
+		channel =		CHAN_VOICE,
+		volume =		1.0,
+		pitch =			{95, 105},
+		level =			SNDLVL_90DB,
+		sound = {
+			"npc/combine_soldier/indie-01.wav",
+			"npc/combine_soldier/indie-02.wav",
+			"npc/combine_soldier/indie-03.wav",
+			"npc/combine_soldier/indie-04.wav",
+			"npc/combine_soldier/indie-05.wav",
+			"npc/combine_soldier/indie-06.wav",
+			"npc/combine_soldier/indie-07.wav",
+			"npc/combine_soldier/indie-08.wav",
+			"npc/combine_soldier/indie-09.wav",
+			"npc/combine_soldier/indie-10.wav",
+			"npc/combine_soldier/indie-11.wav",
+			"npc/combine_soldier/indie-12.wav",
+			"npc/combine_soldier/indie-13.wav",
+			"npc/combine_soldier/indie-14.wav",
+			"npc/combine_soldier/indie-15.wav",
+			"npc/combine_soldier/indie-16.wav",
+			"npc/combine_soldier/indie-17.wav",
+			"npc/combine_soldier/indie-18.wav",
+			"npc/combine_soldier/indie-19.wav",
+			"npc/combine_soldier/indie-20.wav",
+			"npc/combine_soldier/indie-21.wav",
+			"npc/combine_soldier/indie-22.wav",
+			"npc/combine_soldier/indie-23.wav",
+			"npc/combine_soldier/indie-24.wav",
+			"npc/combine_soldier/indie-25.wav",
+			"npc/combine_soldier/indie-26.wav",
+			"npc/combine_soldier/indie-27.wav",
+			"npc/combine_soldier/indie-28.wav",
+			"npc/combine_soldier/indie-29.wav",
+			"npc/combine_soldier/indie-30.wav",
+			"npc/combine_soldier/indie-31.wav",
+			"npc/combine_soldier/indie-32.wav",
+			"npc/combine_soldier/indie-33.wav",
+			"npc/combine_soldier/indie-34.wav",
+			"npc/combine_soldier/indie-35.wav",
+			"npc/combine_soldier/indie-36.wav",
+			"npc/combine_soldier/indie-37.wav",
+			"npc/combine_soldier/indie-38.wav",
+			"npc/combine_soldier/indie-39.wav",
+			"npc/combine_soldier/indie-40.wav",
+			"npc/combine_soldier/indie-41.wav",
+			"npc/combine_soldier/indie-42.wav",
+			"npc/combine_soldier/indie-43.wav",
+			"npc/combine_soldier/indie-44.wav",
+			"npc/combine_soldier/indie-45.wav",
+			"npc/combine_soldier/indie-46.wav",
+			"npc/combine_soldier/indie-47.wav",
+			"npc/combine_soldier/indie-48.wav",
+			"npc/combine_soldier/indie-49.wav",
+			"npc/combine_soldier/indie-50.wav",
+			"npc/combine_soldier/indie-51.wav",
+			"npc/combine_soldier/indie-52.wav",
+			"npc/combine_soldier/indie-53.wav",
+			"npc/combine_soldier/indie-54.wav",
+			"npc/combine_soldier/indie-55.wav",
+			"npc/combine_soldier/indie-56.wav",
+			"npc/combine_soldier/indie-57.wav",
+			"npc/combine_soldier/indie-58.wav",
+			"npc/combine_soldier/indie-59.wav",
+			"npc/combine_soldier/indie-60.wav",
+			"npc/combine_soldier/indie-61.wav",
+			"npc/combine_soldier/indie-62.wav",
+			"npc/combine_soldier/indie-63.wav",
+			"npc/combine_soldier/indie-64.wav",
+			"npc/combine_soldier/indie-65.wav",
+			"npc/combine_soldier/indie-66.wav",
+			"npc/combine_soldier/indie-67.wav",
+			"npc/combine_soldier/indie-68.wav",
+			"npc/combine_soldier/indie-69.wav",
+			"npc/combine_soldier/indie-70.wav",
+			"npc/combine_soldier/indie-71.wav",
+			"npc/combine_soldier/indie-72.wav",
+			"npc/combine_soldier/indie-73.wav",
+			"npc/combine_soldier/indie-74.wav",
+			"npc/combine_soldier/indie-75.wav",
+			"npc/combine_soldier/indie-76.wav",
+			"npc/combine_soldier/indie-77.wav",
+			"npc/combine_soldier/indie-78.wav",
+			"npc/combine_soldier/indie-79.wav",
+			"npc/combine_soldier/indie-80.wav",
+			"npc/combine_soldier/indie-81.wav",
+			"npc/combine_soldier/indie-82.wav",
+			"npc/combine_soldier/indie-83.wav",
+			"npc/combine_soldier/indie-84.wav",
+			"npc/combine_soldier/indie-85.wav",
+			"npc/combine_soldier/indie-86.wav",
+			"npc/combine_soldier/indie-87.wav",
+			"npc/combine_soldier/indie-88.wav",
+			"npc/combine_soldier/indie-89.wav",
+			"npc/combine_soldier/indie-90.wav",
+			"npc/combine_soldier/indie-91.wav",
+			"npc/combine_soldier/indie-92.wav",
+			"npc/combine_soldier/indie-93.wav",
+			"npc/combine_soldier/indie-94.wav",
+			"npc/combine_soldier/indie-95.wav",
+			"npc/combine_soldier/indie-96.wav",
+			"npc/combine_soldier/indie-97.wav",
+			"npc/combine_soldier/indie-98.wav",
+			"npc/combine_soldier/indie-99.wav",
+			"npc/combine_soldier/indie-100.wav",
+			"npc/combine_soldier/indie-101.wav",
+			"npc/combine_soldier/indie-102.wav",
+			"npc/combine_soldier/indie-103.wav",
+			"npc/combine_soldier/indie-104.wav",
+			"npc/combine_soldier/indie-105.wav",
+			"npc/combine_soldier/indie-106.wav",
+			"npc/combine_soldier/indie-107.wav",
+			"npc/combine_soldier/indie-108.wav",
+			"npc/combine_soldier/indie-109.wav",
+			"npc/combine_soldier/indie-110.wav",
+			"npc/combine_soldier/indie-111.wav",
+			"npc/combine_soldier/indie-112.wav",
+			"npc/combine_soldier/indie-113.wav",
+			"npc/combine_soldier/indie-114.wav",
+			"npc/combine_soldier/indie-115.wav",
+			"npc/combine_soldier/indie-116.wav",
+			"npc/combine_soldier/indie-117.wav",
+			"npc/combine_soldier/indie-118.wav",
+			"npc/combine_soldier/indie-119.wav",
+			"npc/combine_soldier/indie-120.wav",
+			"npc/combine_soldier/indie-121.wav",
+			"npc/combine_soldier/indie-122.wav",
+			"npc/combine_soldier/indie-123.wav",
+			"npc/combine_soldier/indie-124.wav",
+			"npc/combine_soldier/indie-125.wav",
+			"npc/combine_soldier/indie-126.wav",
+			"npc/combine_soldier/indie-127.wav",
+			"npc/combine_soldier/indie-128.wav",
+			"npc/combine_soldier/indie-129.wav",
+			"npc/combine_soldier/indie-130.wav",
+			"npc/combine_soldier/indie-131.wav",
+			"npc/combine_soldier/indie-132.wav",
+			"npc/combine_soldier/indie-133.wav",
+			"npc/combine_soldier/indie-134.wav",
+			"npc/combine_soldier/indie-135.wav",
+			"npc/combine_soldier/indie-136.wav",
+		}
+	})
+
+	sound.Add({
+		name = 			"NPC_CombineS.DissolveScream",
+		channel =		CHAN_VOICE,
+		volume =		1.0,
+		pitch =			{95, 105},
+		level =			SNDLVL_90DB,
+		sound = {
+			"npc/combine_soldier/indie-01.wav",
+			"npc/combine_soldier/indie-02.wav",
+			"npc/combine_soldier/indie-03.wav",
+			"npc/combine_soldier/indie-04.wav",
+			"npc/combine_soldier/indie-05.wav",
+			"npc/combine_soldier/indie-06.wav",
+			"npc/combine_soldier/indie-07.wav",
+			"npc/combine_soldier/indie-08.wav",
+			"npc/combine_soldier/indie-09.wav",
+			"npc/combine_soldier/indie-10.wav",
+			"npc/combine_soldier/indie-11.wav",
+			"npc/combine_soldier/indie-12.wav",
+			"npc/combine_soldier/indie-13.wav",
+			"npc/combine_soldier/indie-14.wav",
+			"npc/combine_soldier/indie-15.wav",
+			"npc/combine_soldier/indie-16.wav",
+			"npc/combine_soldier/indie-17.wav",
+			"npc/combine_soldier/indie-18.wav",
+			"npc/combine_soldier/indie-19.wav",
+			"npc/combine_soldier/indie-20.wav",
+			"npc/combine_soldier/indie-21.wav",
+			"npc/combine_soldier/indie-22.wav",
+			"npc/combine_soldier/indie-23.wav",
+			"npc/combine_soldier/indie-24.wav",
+			"npc/combine_soldier/indie-25.wav",
+			"npc/combine_soldier/indie-26.wav",
+			"npc/combine_soldier/indie-27.wav",
+			"npc/combine_soldier/indie-28.wav",
+			"npc/combine_soldier/indie-29.wav",
+			"npc/combine_soldier/indie-30.wav",
+			"npc/combine_soldier/indie-31.wav",
+			"npc/combine_soldier/indie-32.wav",
+			"npc/combine_soldier/indie-33.wav",
+			"npc/combine_soldier/indie-34.wav",
+			"npc/combine_soldier/indie-35.wav",
+			"npc/combine_soldier/indie-36.wav",
+			"npc/combine_soldier/indie-37.wav",
+			"npc/combine_soldier/indie-38.wav",
+			"npc/combine_soldier/indie-39.wav",
+			"npc/combine_soldier/indie-40.wav",
+			"npc/combine_soldier/indie-41.wav",
+			"npc/combine_soldier/indie-42.wav",
+			"npc/combine_soldier/indie-43.wav",
+			"npc/combine_soldier/indie-44.wav",
+			"npc/combine_soldier/indie-45.wav",
+			"npc/combine_soldier/indie-46.wav",
+			"npc/combine_soldier/indie-47.wav",
+			"npc/combine_soldier/indie-48.wav",
+			"npc/combine_soldier/indie-49.wav",
+			"npc/combine_soldier/indie-50.wav",
+			"npc/combine_soldier/indie-51.wav",
+			"npc/combine_soldier/indie-52.wav",
+			"npc/combine_soldier/indie-53.wav",
+			"npc/combine_soldier/indie-54.wav",
+			"npc/combine_soldier/indie-55.wav",
+			"npc/combine_soldier/indie-56.wav",
+			"npc/combine_soldier/indie-57.wav",
+			"npc/combine_soldier/indie-58.wav",
+			"npc/combine_soldier/indie-59.wav",
+			"npc/combine_soldier/indie-60.wav",
+			"npc/combine_soldier/indie-61.wav",
+			"npc/combine_soldier/indie-62.wav",
+			"npc/combine_soldier/indie-63.wav",
+			"npc/combine_soldier/indie-64.wav",
+			"npc/combine_soldier/indie-65.wav",
+			"npc/combine_soldier/indie-66.wav",
+			"npc/combine_soldier/indie-67.wav",
+			"npc/combine_soldier/indie-68.wav",
+			"npc/combine_soldier/indie-69.wav",
+			"npc/combine_soldier/indie-70.wav",
+			"npc/combine_soldier/indie-71.wav",
+			"npc/combine_soldier/indie-72.wav",
+			"npc/combine_soldier/indie-73.wav",
+			"npc/combine_soldier/indie-74.wav",
+			"npc/combine_soldier/indie-75.wav",
+			"npc/combine_soldier/indie-76.wav",
+			"npc/combine_soldier/indie-77.wav",
+			"npc/combine_soldier/indie-78.wav",
+			"npc/combine_soldier/indie-79.wav",
+			"npc/combine_soldier/indie-80.wav",
+			"npc/combine_soldier/indie-81.wav",
+			"npc/combine_soldier/indie-82.wav",
+			"npc/combine_soldier/indie-83.wav",
+			"npc/combine_soldier/indie-84.wav",
+			"npc/combine_soldier/indie-85.wav",
+			"npc/combine_soldier/indie-86.wav",
+			"npc/combine_soldier/indie-87.wav",
+			"npc/combine_soldier/indie-88.wav",
+			"npc/combine_soldier/indie-89.wav",
+			"npc/combine_soldier/indie-90.wav",
+			"npc/combine_soldier/indie-91.wav",
+			"npc/combine_soldier/indie-92.wav",
+			"npc/combine_soldier/indie-93.wav",
+			"npc/combine_soldier/indie-94.wav",
+			"npc/combine_soldier/indie-95.wav",
+			"npc/combine_soldier/indie-96.wav",
+			"npc/combine_soldier/indie-97.wav",
+			"npc/combine_soldier/indie-98.wav",
+			"npc/combine_soldier/indie-99.wav",
+			"npc/combine_soldier/indie-100.wav",
+			"npc/combine_soldier/indie-101.wav",
+			"npc/combine_soldier/indie-102.wav",
+			"npc/combine_soldier/indie-103.wav",
+			"npc/combine_soldier/indie-104.wav",
+			"npc/combine_soldier/indie-105.wav",
+			"npc/combine_soldier/indie-106.wav",
+			"npc/combine_soldier/indie-107.wav",
+			"npc/combine_soldier/indie-108.wav",
+			"npc/combine_soldier/indie-109.wav",
+			"npc/combine_soldier/indie-110.wav",
+			"npc/combine_soldier/indie-111.wav",
+			"npc/combine_soldier/indie-112.wav",
+			"npc/combine_soldier/indie-113.wav",
+			"npc/combine_soldier/indie-114.wav",
+			"npc/combine_soldier/indie-115.wav",
+			"npc/combine_soldier/indie-116.wav",
+			"npc/combine_soldier/indie-117.wav",
+			"npc/combine_soldier/indie-118.wav",
+			"npc/combine_soldier/indie-119.wav",
+			"npc/combine_soldier/indie-120.wav",
+			"npc/combine_soldier/indie-121.wav",
+			"npc/combine_soldier/indie-122.wav",
+			"npc/combine_soldier/indie-123.wav",
+			"npc/combine_soldier/indie-124.wav",
+			"npc/combine_soldier/indie-125.wav",
+			"npc/combine_soldier/indie-126.wav",
+			"npc/combine_soldier/indie-127.wav",
+			"npc/combine_soldier/indie-128.wav",
+			"npc/combine_soldier/indie-129.wav",
+			"npc/combine_soldier/indie-130.wav",
+			"npc/combine_soldier/indie-131.wav",
+			"npc/combine_soldier/indie-132.wav",
+			"npc/combine_soldier/indie-133.wav",
+			"npc/combine_soldier/indie-134.wav",
+			"npc/combine_soldier/indie-135.wav",
+			"npc/combine_soldier/indie-136.wav",
+		}
+	})
+
+	--ZOMBIE
+	--ENV_HEADCRABCANISTER
+	sound.Add({
+		name = 			"HeadcrabCanister.IncomingSound",
+		channel =		CHAN_STATIC,
+		volume =		1,
+		level =			0,
+		pitch =			PITCH_NORM,
+		sound = {
+			"npc/env_headcrabcanister/incoming1.wav",
+			"npc/env_headcrabcanister/incoming2.wav",
+			"npc/env_headcrabcanister/incoming3.wav",
+			"npc/env_headcrabcanister/incoming4.wav",
+		}
+	})
+
+	sound.Add({
+		name = 			"HeadcrabCanister.LaunchSound",
+		channel =		CHAN_STATIC,
+		volume =		1,
+		level =			0,
+		pitch =			PITCH_NORM,
+		sound = {
+			"npc/env_headcrabcanister/launch1.wav",
+			"npc/env_headcrabcanister/launch2.wav",
+			"npc/env_headcrabcanister/launch3.wav",
+			"npc/env_headcrabcanister/launch4.wav",
+			"npc/env_headcrabcanister/launch5.wav",
+		}
+	})
+
+	sound.Add({
+		name = 			"HeadcrabCanister.Explosion",
+		channel =		CHAN_STATIC,
+		volume =		1,
+		level =			SNDLVL_140db,
+		pitch =			PITCH_NORM,
+		sound = {
+			"npc/env_headcrabcanister/explosion1.wav",
+			"npc/env_headcrabcanister/explosion2.wav",
+			"npc/env_headcrabcanister/explosion3.wav",
+			"npc/env_headcrabcanister/explosion4.wav",
+		}
+			
+	})
+
+	sound.Add({
+		name = 			"HeadcrabCanister.AfterLanding",
+		channel =		CHAN_STATIC,
+		volume =		0.56,
+		level =			SNDLVL_70dB,
+		pitch =			PITCH_NORM,
+		sound = 		"npc/env_headcrabcanister/hiss.wav"
+	})
+
+	sound.Add({
+		name = 			"HeadcrabCanister.SkyboxExplosion",
+		channel =		CHAN_STATIC,
+		volume =		1,
+		level =			0,
+		pitch =			PITCH_NORM,
+		sound = {
+			"npc/env_headcrabcanister/explosion1.wav",
+			"npc/env_headcrabcanister/explosion2.wav",
+			"npc/env_headcrabcanister/explosion3.wav",
+			"npc/env_headcrabcanister/explosion4.wav",
+		}
+	})
+
+	sound.Add({
+		name = 			"HeadcrabCanister.Open",
+		channel =		CHAN_BODY,
+		volume =		0.5,
+		pitch =			100,
+		level =			SNDLVL_90dB,
+		sound = 		"ambient/levels/canals/headcrab_canister_open1.wav"
+	})
+
+	--ZOMBINE
+	sound.Add({
+		name = 			"Zombine.Charge",
+		channel =		CHAN_VOICE,
+		volume =		0.9,
+		pitch =			{90, 110},
+		level =			SNDLVL_NORM,
+		sound = {
+			"npc/zombine/zombine_charge1.wav",
+			"npc/zombine/zombine_alert6.wav"	
+		}
+	})
+
+	sound.Add({
+		name = 			"Zombine.ReadyGrenade",
+		channel =		CHAN_VOICE,
+		volume =		0.9,
+		pitch =			{95, 104},
+		level =			SNDLVL_NORM,
+		sound = {
+			"npc/zombine/zombine_readygrenade1.wav",
+			"npc/zombine/zombine_readygrenade2.wav"	
+		}
+	})
+
+	sound.Add({
+		name = 			"Zombine.ScuffRight",
+		channel =		CHAN_BODY,
+		volume =		0.95,
+		pitch =			PITCH_NORM,
+		level =			SNDLVL_65db,
+		sound = {
+			"npc/zombine/gear1.wav",
+			"npc/zombine/gear2.wav"
+		}
+	})
+
+	sound.Add({
+		name = 			"Zombine.ScuffLeft",
+		channel =		CHAN_BODY,
+		volume =		0.95,
+		pitch =			PITCH_NORM,
+		level =			SNDLVL_65db,
+		sound = {
+			"npc/zombie/foot_slide1.wav",
+			"npc/zombine/gear3.wav"
+		}
+	})
+
+	sound.Add({
+		name = 			"Zombine.Pain",
+		channel =		CHAN_VOICE,
+		volume =		1.0,
+		pitch =			95, 104,
+		level =			SNDLVL_NORM,
+		sound = {
+			"npc/zombine/zombine_pain1.wav",
+			"npc/zombine/zombine_pain2.wav",
+			"npc/zombine/zombine_pain3.wav",
+			"npc/zombine/zombine_pain4.wav"
+		}
+	})
+
+	sound.Add({
+		name = 			"Zombine.Alert",
+		channel =		CHAN_VOICE,
+		volume =		0.80,
+		pitch =			{95, 104},
+		level =			SNDLVL_NORM,
+		sound = {
+			"npc/zombine/zombine_alert1.wav",
+			"npc/zombine/zombine_alert3.wav",
+			"npc/zombine/zombine_alert4.wav",
+			"npc/zombine/zombine_alert5.wav",
+			"npc/zombine/zombine_alert7.wav"
+		}
+	})
+
+	sound.Add({
+		name = 			"Zombine.Idle",
+		channel =		CHAN_VOICE,
+		volume =		0.75,
+		pitch =			{92, 105},
+		level =			SNDLVL_65db,
+		sound = {
+			"npc/zombine/zombine_alert2.wav",
+			"npc/zombine/zombine_idle1.wav",
+			"npc/zombine/zombine_idle2.wav",
+			"npc/zombine/zombine_idle3.wav",
+			"npc/zombine/zombine_idle4.wav",
+		}
+	})
+
+	sound.Add({
+		name = 			"Zombine.Die",
+		channel =		CHAN_VOICE,
+		volume =		0.95,
+		pitch =			{90, 110},
+		level =			SNDLVL_NORM,
+		sound = {
+			"npc/zombine/zombine_die1.wav",
+			"npc/zombine/zombine_die2.wav",
+			"npc/zombie/zombie_die3.wav",
+		}
+	})
+
+	--SNIPER
+	sound.Add({
+		name = 				"NPC_Sniper.Die",
+		channel =			CHAN_VOICE,
+		volume =			1,
+		pitch =				PITCH_NORM,
+		level =				SNDLVL_80dB,
+		sound = {
+			"npc/combine_soldier/indie1.wav",
+			"npc/combine_soldier/indie2.wav",
+			"npc/combine_soldier/indie3.wav",
+			"npc/combine_soldier/indie4.wav",
+			"npc/combine_soldier/indie5.wav",
+			"npc/combine_soldier/indie6.wav",
+			"npc/combine_soldier/indie7.wav",
+			"npc/combine_soldier/indie8.wav",
+			"npc/combine_soldier/indie9.wav",
+			"npc/combine_soldier/indie10.wav",
+			"npc/combine_soldier/indie11.wav",
+			"npc/combine_soldier/indie12.wav",
+			"npc/combine_soldier/indie13.wav",
+			"npc/combine_soldier/indie14.wav",
+			"npc/combine_soldier/indie15.wav",
+			"npc/combine_soldier/indie16.wav",
+			"npc/combine_soldier/indie18.wav",
+			"npc/combine_soldier/indie19.wav",
+			"npc/combine_soldier/indie21.wav",
+			"npc/combine_soldier/indie22.wav",
+			"npc/combine_soldier/indie23.wav",
+			"npc/combine_soldier/indie24.wav",
+			"npc/combine_soldier/indie25.wav",
+			"npc/combine_soldier/indie26.wav",
+			"npc/combine_soldier/indie27.wav",
+			"npc/combine_soldier/indie28.wav",
+			"npc/combine_soldier/indie29.wav",
+			"npc/combine_soldier/indie30.wav",
+			"npc/combine_soldier/indie31.wav",
+			"npc/combine_soldier/indie32.wav",
+			"npc/combine_soldier/indie33.wav",
+			"npc/combine_soldier/indie34.wav",
+			"npc/combine_soldier/indie35.wav",
+			"npc/combine_soldier/indie36.wav",
+			"npc/combine_soldier/indie38.wav",
+			"npc/combine_soldier/indie39.wav",
+			"npc/combine_soldier/indie40.wav",
+			"npc/combine_soldier/indie41.wav",
+			"npc/combine_soldier/indie43.wav",
+			"npc/combine_soldier/indie44.wav",
+			"npc/combine_soldier/indie45.wav",
+			"npc/combine_soldier/indie46.wav",
+			"npc/combine_soldier/indie48.wav",
+			"npc/combine_soldier/indie49.wav",
+			"npc/combine_soldier/indie50.wav",
+			"npc/combine_soldier/indie51.wav",
+			"npc/combine_soldier/indie52.wav",
+			"npc/combine_soldier/indie53.wav",
+			"npc/combine_soldier/indie54.wav",
+			"npc/combine_soldier/indie55.wav",
+			"npc/combine_soldier/indie56.wav",
+			"npc/combine_soldier/indie57.wav",
+			"npc/combine_soldier/indie59.wav",
+			"npc/combine_soldier/indie60.wav",
+			"npc/combine_soldier/indie61.wav",
+			"npc/combine_soldier/indie62.wav",
+			"npc/combine_soldier/indie63.wav",
+			"npc/combine_soldier/indie64.wav",
+			"npc/combine_soldier/indie65.wav",
+			"npc/combine_soldier/indie66.wav",
+			"npc/combine_soldier/indie67.wav",
+			"npc/combine_soldier/indie68.wav",
+			"npc/combine_soldier/indie69.wav",
+			"npc/combine_soldier/indie70.wav",
+			"npc/combine_soldier/indie71.wav",
+			"npc/combine_soldier/indie72.wav"
+		}
+	})
+
+	sound.Add({
+		name = 			"NPC_Sniper.FireBullet",
+		channel =		CHAN_AUTO,
+		volume =		0.95,
+		pitch =			{97,104},
+		level =			SNDLVL_GUNFIRE,
+		sound = {
+			"npc/sniper/echo1.wav",
+			"npc/sniper/echo2.wav",
+			"npc/sniper/echo3.wav"
+		}
+	})
+
+	sound.Add({
+		name = 			"NPC_Sniper.Reload",
+		channel =		CHAN_WEAPON,
+		volume =		0.74,
+		pitch =			100,
+		level =			SNDLVL_90dB,
+		sound = 		"npc/sniper/reload1.wav"
+	})
+
+	sound.Add({
+		name = 			"NPC_Sniper.SonicBoom",
+		channel =		CHAN_WEAPON,
+		volume =		1,
+		pitch =			{95,106},
+		level =			SNDLVL_120dB,
+		sound = {
+			"npc/sniper/SonicBoom1.wav",
+			"npc/sniper/SonicBoom2.wav",
+			"npc/sniper/SonicBoom3.wav",
+			"npc/sniper/SonicBoom4.wav",
+			"npc/sniper/SonicBoom5.wav",
+			"npc/sniper/SonicBoom6.wav",
+			"npc/sniper/SonicBoom7.wav",
+			"npc/sniper/SonicBoom8.wav",
+			"npc/sniper/SonicBoom9.wav",
+			"npc/sniper/SonicBoom10.wav",
+			"npc/sniper/SonicBoom11.wav",
+			"npc/sniper/SonicBoom12.wav",
+			"npc/sniper/SonicBoom13.wav",
+			"npc/sniper/SonicBoom14.wav",
+			"npc/sniper/SonicBoom15.wav",
+			"npc/sniper/SonicBoom16.wav",
+			"npc/sniper/SonicBoom17.wav",
+			"npc/sniper/SonicBoom18.wav",
+			"npc/sniper/SonicBoom19.wav",
+			"npc/sniper/SonicBoom20.wav",
+			"npc/sniper/SonicBoom21.wav",
+			"npc/sniper/SonicBoom22.wav",
+			"npc/sniper/SonicBoom23.wav",
+			"npc/sniper/SonicBoom24.wav",
+			"npc/sniper/SonicBoom25.wav",
+			"npc/sniper/SonicBoom26.wav",
+			"npc/sniper/SonicBoom27.wav",
+			"npc/sniper/SonicBoom28.wav",
+			"npc/sniper/SonicBoom29.wav"
+		}
+	})
+end
