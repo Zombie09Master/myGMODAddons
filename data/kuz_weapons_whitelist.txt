@@ -1,0 +1,1 @@
+{"maxWeaponsPerSlot":2,"weaponSlots":["weapon_physgun","gmod_tool","gmod_camera"]}
